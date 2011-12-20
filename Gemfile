@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.1.3'
-
+gem 'webrat'
 gem 'pg'
 
 group :assets do
@@ -12,10 +12,8 @@ end
 
 gem 'jquery-rails'
 
-group :development do
-	gem 'rspec-rails'
-end
+gem 'rspec-rails', :group => [:test, :development]
 
 group :test do
-	gem 'rspec'
+	gem 'spork', '> 0.9.0.rc'
 end
