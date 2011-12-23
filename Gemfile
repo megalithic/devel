@@ -3,6 +3,8 @@ source 'http://rubygems.org'
 gem 'rails', '3.1.3'
 gem 'webrat'
 gem 'pg'
+gem 'heroku'
+gem 'rails-boilerplate'
 
 group :assets do
   gem 'sass-rails',   '~> 3.1.5'
