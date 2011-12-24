@@ -1,9 +1,12 @@
 Devel::Application.routes.draw do
+  get "users/new"
+
 	root :to => "pages#home"
 	
 	match '/about', :to => 'pages#about'
 	match '/contact', :to => 'pages#contact'
 	match '/help', :to => 'pages#help'
+	match '/signup', :to => "users#new" 
 		
   get "pages/home"
 	get "pages/about"
